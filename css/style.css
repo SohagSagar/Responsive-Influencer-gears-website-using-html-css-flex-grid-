@@ -6,11 +6,32 @@
 }
 :root{
     --main-color:#EB4D4B;
+    --text-color:#3A3A3A;
+}
+.page-layout{
+    margin: auto;
+    max-width: 1200px;
+}
+.button{
+    padding: 10px 50px;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+.button:hover{
+    color: var(--main-color);
+    background-color: white;
+    transition: 0.6s;
 }
 
+span{
+    color: var(--main-color);
+}
 /* Header styling */
 header{
     background-color:#CAD5E2;
+    margin-bottom: 100px;
     
 }
 .nav-bar{
@@ -40,12 +61,13 @@ ul li{
 }
 ul a{
     text-decoration: none;
-    color:black;
+    color:var(--text-color);
     font-size: 20px;
 }
 ul i{
     padding-left: 40px;
     font-size: 20px;
+    color: var(--text-color);
 }
 .menu-items a:hover{
     border-bottom: 3px solid var(--main-color);
@@ -56,3 +78,34 @@ ul i{
 
 /* Header styling ends */
 
+/* Home page styling starts */
+
+.home-page{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.left-items{
+    width: 60%;
+    padding: 20px 20px 20px 0;
+}
+.left-items h1{
+    font-size: 52px;
+    font-weight: 900;
+    color: var(--text-color);
+    margin-bottom:30px;
+}
+.left-items p{
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.right-items{
+    width: 40%;
+    margin-left: 50px;
+}
+
+/* Home page styling ends */
