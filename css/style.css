@@ -7,6 +7,7 @@
 :root{
     --main-color:#EB4D4B;
     --text-color:#3A3A3A;
+    --rating-color:#E8BD0D;
 }
 .page-layout{
     margin: auto;
@@ -24,7 +25,12 @@
     background-color: white;
     transition: 0.6s;
 }
+.buy-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 
+}
 span{
     color: var(--main-color);
 }
@@ -109,3 +115,102 @@ ul i{
 }
 
 /* Home page styling ends */
+
+/* Top E-commerces list styling */
+
+.top-ecomerces{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.top-ecomerces img{
+    padding:30px;
+}
+.hr-line{
+    color: #e7f0fa;
+}
+
+/* Top E-commerces list styling */
+
+/* Popular collections section starts */
+
+.popular-collections h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: var(--text-color);
+    font-size: 35px;
+    text-align: center;
+}
+.popular-items{
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(3,1fr);
+    
+    
+}
+
+.popular-item{
+    border-radius: 10px;
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    box-shadow: 0px 2px 8px 6px #dbd3d3;
+
+}
+.popular-item:hover{
+    box-shadow: 0px 2px 8px 12px #dbd3d3;
+    transition: 0.4s;
+}
+.popular-item img{
+    max-width: 300px;
+    max-height: 350px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.popular-item h3{
+    font-size: 20px;
+}
+.popular-item .price{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-rating{
+    display: flex;
+    align-items: center;
+}
+.product-rating i{
+    margin-left: 5px;
+}
+.product-rating .full{
+    color: var(--rating-color);
+}
+.product-rating .empty{
+    color: var(--text-color);
+}
+.product-rating p{
+    margin-left: 10px;
+}
+.fa-shipping-fast{
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+.see-more-button a{
+    text-decoration: none;
+}
+.see-more-button{
+    display: flex;
+
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+.see-more-button a,i{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Popular collections section ends */
