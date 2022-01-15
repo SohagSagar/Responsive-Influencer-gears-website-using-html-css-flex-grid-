@@ -1,4 +1,4 @@
-/* Common css */
+/* Common css styles*/
 *{
     margin: 0;
     padding: 0;
@@ -333,7 +333,7 @@ fieldset{
 
 /* Delivery Points ends */
 
-/* footer secttions */
+/* footer secttions starts*/
 
 footer{
     background-color: #CAD5E2;
@@ -371,9 +371,10 @@ footer p{
     font-size: 12px;
     color: var(--text-color);
 }
-
+/* footer secttions ends */
 
 /* Media queries */
+
 /* for mobile devices */
 
 @media (max-width:688px) {
@@ -472,6 +473,7 @@ footer p{
     }
 
 }
+
    /* for tablet devices */
 
 @media only screen and (min-width:668px) and (max-width:992px) {
@@ -500,7 +502,6 @@ footer p{
         margin-bottom: 50px;
     }
     .home-page{
-        /* flex-direction: column; */
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
