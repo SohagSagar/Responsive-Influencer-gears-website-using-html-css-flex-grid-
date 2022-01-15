@@ -172,7 +172,7 @@ ul i{
 .popular-item{
     border-radius: 5px;
     width: 300px;
-    height: 450px;
+    height: 460px;
     padding: 15px;
     box-shadow: 0px 0px 10px 0px #dbd3d3;
 
@@ -186,6 +186,7 @@ ul i{
     max-height: 350px;
     border-radius: 5px;
     margin-bottom: 10px;
+    overflow: hidden;
 
 }
 .popular-item h3{
@@ -246,6 +247,7 @@ ul i{
     margin-bottom: 50px;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 .offer-item img{
     width:350px;
@@ -465,5 +467,103 @@ footer p{
         font-size: 12px;
     }
 
+}
    /* for tablet devices */
+
+@media only screen and (min-width:668px) and (max-width:992px) {
+
+    .nav-bar{
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        width: 60px;
+        height:60px;
+    }
+    .menu-items ul a {
+        font-size: 15px;
+    }
+    .menu-items i{
+        font-size: 15px;
+    }
+    ul li{
+        padding-left: 20px;
+    }
+    ul i{
+        padding: 0px 10px 0px 10px;
+    }
+    header{
+        margin-bottom: 50px;
+    }
+    .home-page{
+        /* flex-direction: column; */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+    }
+    .left-items{
+        width: 40%;
+    }
+    .right-items{
+        width: 40%;
+    }
+    .left-items h1{
+        font-size: 25px;
+    }
+    .left-items p{
+        font-size: 13px;
+    }
+    .button{
+        padding: 5px 20px;
+        color: white;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: var(--main-color);
+    }
+    .right-items img{
+        width: 350px;
+        height: 350px;
+        /* margin-left: -105px; */
+    }
+
+    .top-ecomerces img{
+       width:65px;
+       height:65px;
+    }
+
+    .popular-items{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .offer-items{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .offer-item{
+        margin-bottom: 25px;
+    }
+    
+    .delivery-info{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .left-contain{
+        width:40%;
+    }
+    .right-contain{
+        width: 40%;
+        margin-top: 50px;
+    }
+    .left-contain img{
+        width: 300px;
+        height: 300px;
+    }
+    .right-contain h1{
+        font-size: 25px;
+    }
+    .right-contain p{
+        font-size: 13px;
+    }
+}
 
