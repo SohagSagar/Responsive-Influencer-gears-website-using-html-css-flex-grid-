@@ -129,8 +129,8 @@ ul i{
     margin-left: 50px;
 }
 .right-items img{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 
 /* Home page styling ends */
@@ -149,7 +149,7 @@ ul i{
     color: #e7f0fa;
 }
 .last{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 /* Top E-commerces list styling */
@@ -226,6 +226,7 @@ ul i{
     color: var(--main-color);
     margin-top: 20px;
     margin-bottom: 10px;
+    margin-right: 30px;
     justify-content: flex-end;
 }
 .see-more-button a{
@@ -435,6 +436,9 @@ footer p{
 
     .popular-items{
         grid-template-columns: repeat(1,1fr);
+    }
+    .see-more-button{
+        margin-right: 20px;
     }
     .offer-items{
         flex-direction: column;
