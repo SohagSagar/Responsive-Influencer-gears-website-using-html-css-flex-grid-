@@ -400,9 +400,7 @@ footer p{
     .home-page{
         flex-direction: column;
         margin-bottom: 50px;
-        /* align-items: center; */
-        /* justify-content: flex-start; */
-        
+
     }
     .left-items{
         order: 2;
@@ -467,4 +465,5 @@ footer p{
         font-size: 12px;
     }
 
-   
+   /* for tablet devices */
+
